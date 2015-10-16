@@ -6,20 +6,20 @@ public class Pet {
 	public int id;
 	public String name;
 	public String breed;
-	public static final String DB_TABLE = "Pet";
+	public static final String DB_TABLE = "pet";
 	public static final String FIELD_ID = "_id";
 	public static final String FIELD_NAME = "_name";
 	public static final String FIELD_BREED = "_breed";
-	public static String CREATE_DB_TABLE= "create table" + DB_TABLE
+	public static String CREATE_DB_TABLE= "create table " + DB_TABLE
 			+ "(" +
 
-			FIELD_ID + "integer primary key autoincrement," +
+			FIELD_ID + " integer primary key autoincrement," +
 
-			FIELD_NAME + "text," +
+			FIELD_NAME + " text," +
 
-			FIELD_BREED + "text" +
+			FIELD_BREED + " text" +
 
-			");";
+			")";
 
 
 	public int getId() {
